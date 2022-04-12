@@ -3,6 +3,9 @@ from typing import List
 
 class Solution:
     def maxSubArray(self, nums: List[int]) -> int:
+        """
+        dp[i] is the max sum of 0:i subarray that must contain i-th elem
+        """
         dp = [0] * len(nums)
         dp[0] = nums[0]
         res = dp[0]

@@ -11,7 +11,7 @@ class ListNode:
 class Solution:
     def middleNode(self, head: Optional[ListNode]) -> Optional[ListNode]:
         slow = head
-        fast = head
+        fast = head  # 2 times faster than slow ==> when fast reaches the end slow will be at the middle
 
         while fast is not None:
             fast = fast.next

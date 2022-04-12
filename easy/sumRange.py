@@ -7,6 +7,10 @@ class NumArray:
         self._cumsum(nums)
 
     def _cumsum(self, nums):
+        """
+        nums   = [1, 2, 2,  5]
+        cumsum = [1, 3, 5, 10]
+        """
         self.sums = [0] * len(nums)
         self.sums[0] = nums[0]
 

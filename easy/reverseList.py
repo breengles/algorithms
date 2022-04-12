@@ -10,6 +10,10 @@ class ListNode:
 
 class Solution:
     def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        """
+        1 -> 2 -> 3
+        1 <- 2 <- 3
+        """
         prev = None
         cur = head
 
